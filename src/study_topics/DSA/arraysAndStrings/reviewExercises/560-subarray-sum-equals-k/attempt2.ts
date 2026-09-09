@@ -15,12 +15,11 @@ function subarraySumEqualsToK(nums: number[], target: number): number {
           
         frecuencies.set(curr,(frecuencies.get(curr) || 0)+1);
     }
-    console.log("cont",cont)
-    return [...frecuencies.values()].reduce((a,b) => a+b);
+    return cont;
 }
 
-// console.log(subarraySumEqualsToK([1,4,2,5], 5),2);
-// console.log(subarraySumEqualsToK([1,1,1], 2),2);
+console.log(subarraySumEqualsToK([1,4,2,5], 5),2);
+console.log(subarraySumEqualsToK([1,1,1], 2),2);
 console.log(subarraySumEqualsToK([0,0], 3),3);
 /**
  * 
