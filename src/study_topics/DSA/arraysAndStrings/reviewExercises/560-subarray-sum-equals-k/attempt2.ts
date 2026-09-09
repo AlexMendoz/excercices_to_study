@@ -20,7 +20,7 @@ function subarraySumEqualsToK(nums: number[], target: number): number {
 
 console.log(subarraySumEqualsToK([1,4,2,5], 5),2);
 console.log(subarraySumEqualsToK([1,1,1], 2),2);
-console.log(subarraySumEqualsToK([0,0], 3),3);
+console.log(subarraySumEqualsToK([0,0], 0),3);
 /**
  * 
  * Encontrar la cantidad de subarrays que cumplen con la suma k
