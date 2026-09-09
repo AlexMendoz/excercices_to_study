@@ -4,24 +4,24 @@ function subarraySumEqualsToK(nums: number[], target: number): number {
 
     let curr = 0;
     let frecuencies = new Map();
-    frecuencies.set(0,0); // el valor tiene un afrecuencia implicita de 1, por eso lo seteamos
+    frecuencies.set(0,1); // el valor tiene un afrecuencia implicita de 1, por eso lo seteamos
     let cont = 0;
     for (let i = 0; i < nums.length; i++) {
         curr = curr + nums[i]; // calculamos el prefix sum 
         let complemento = curr - target;
         if (frecuencies.has(complemento)) {
-            frecuencies.set(curr,(frecuencies.get(curr) || 0)+1);
-            cont++;
-        } else {
-
-            frecuencies.set(curr,0);
-        }   
+            cont = cont + frecuencies.get(complemento);
+        } 
+          
+        frecuencies.set(curr,(frecuencies.get(curr) || 0)+1);
     }
-    return cont;
+    console.log("cont",cont)
+    return [...frecuencies.values()].reduce((a,b) => a+b);
 }
 
-console.log(subarraySumEqualsToK([1,4,2,5], 5));
-console.log(subarraySumEqualsToK([1,1,1], 2));
+// console.log(subarraySumEqualsToK([1,4,2,5], 5),2);
+// console.log(subarraySumEqualsToK([1,1,1], 2),2);
+console.log(subarraySumEqualsToK([0,0], 3),3);
 /**
  * 
  * Encontrar la cantidad de subarrays que cumplen con la suma k
