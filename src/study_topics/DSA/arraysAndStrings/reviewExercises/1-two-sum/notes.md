@@ -72,10 +72,10 @@ Respuesta:
 Respuesta: identificar la manera en que se tenia que usar el Map
 
 ### Error encontrado
-Respuesta: usar get en lugar de has, ya que estaba buscando un indice con un valor de nums y eso no era posible
+Respuesta: usar set en lugar de hash, ya que estaba buscando un indice con un valor de nums y eso no era posible
 
 ### Aprendizaje principal
 Respuesta: mejorar en identificar como usar los Map, hay que seguir mejorando
 
 ### Qué haría diferente la próxima vez
-Respuesta: tener mas presente la verdadera utlidad de los mapas. verificar las formulas que pueda llegar a usar, ya que estas tiene mucho informacion implicita
+Respuesta: tener mas presente la verdadera utilidad de los mapas. verificar las formulas que pueda llegar a usar, ya que estas tiene mucho informacion implicita
