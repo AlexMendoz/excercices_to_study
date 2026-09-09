@@ -16,23 +16,23 @@ Output: 2
 ## 1. Análisis previo
 
 ### ¿Qué me están pidiendo?
-Respuesta: encotrar el numero total de subarray que sumen k
+Respuesta: Encontrar el numero de subarrays que la suma sea igual a k
 
 ### Input / Output
-- Input: inteeger array and integer k
-- Output: integer 
+- Input: arreglo de enteros y un numero k
+- Output: numero de sub array que sumen k
 
 ### Ejemplo pequeño
-Respuesta:
+Respuesta: para [1,1,1] y k = 2, la respuesta seria 2, por los 1s con indice 0 y 1, y los 1s de indice 1 y 2
 
 ### ¿Qué información necesito conservar?
-Respuesta: para [1,1,1]  y k = 2 2, por que [1,1] = 1+1 = 2, y [1,1] = 1+1= 2
+Respuesta: la prefix sum de los elementos
 
 ### Patrón o estructura que parece encajar
-Respuesta: sliding window
+Respuesta: slidind windows
 
 ### Brute force (opcional)
-Respuesta: 
+Respuesta:
 
 ---
 
@@ -58,10 +58,10 @@ Respuesta: encontrar un ventana que cumpla con la condicion de la suma
 
 ## 3. Resultado
 
-- Fecha: YYYY-MM-DD
-- Tiempo efectivo: 35 minutos 10:21 11:11
-- Estado: `No terminado | Resuelto con ayuda | Resuelto independientemente`
-- Ayuda utilizada: `Ninguna | Pista | Explicación | Solución`
+- Fecha: 01 09 2026
+- Tiempo efectivo: 90 minutos
+- Estado: `Resuelto con ayuda`
+- Ayuda utilizada: `Explicación`
 - Complejidad temporal:
 - Complejidad espacial:
 
@@ -70,13 +70,25 @@ Respuesta: encontrar un ventana que cumpla con la condicion de la suma
 ## 4. Revisión
 
 ### Bloqueo principal
-Respuesta: Identificar correctamente como aumentan o disminuyen las ventanas
+Respuesta: se necesito entender mejor como utlizar prefix sum y map para encontrar la solucion, no es tan intuitivo que se deben de contar las frecuencias de aparicion de un numero,
 
 ### Error encontrado
-Respuesta:
+Respuesta: obtener un valor que no era en el map y luego aumentar ese valor
 
 ### Aprendizaje principal
-Respuesta:
+Respuesta:tener un mejor entendimiento de como se puedne aplicar los conceptos de prefix sum y map para resolver problemas
 
 ### Qué haría diferente la próxima vez
-Respuesta:
+Respuesta: anotar mis ideas ya que la primera vez que intente resolver este problema si pende que seria mejor con un prefix sum pero no lograba comprender por que necesitaba un map
+
+## Notas extras
+
+Este ejercicio no fue comprendido bien desde el inicio, esto por cansancio mental o flojera, sea cual sea el caso, hoy lo vamos a resolver bien.
+
+El día de ayer se inteneto este ejercicio sin exito, al parecer, si lo quiero hacer solo con sliding window, se debe conciderar un caso especial que es el cero, numeros positivos y negativos.
+
+El problema siguiere que se tiene que usar algun map o set y yo entiendo que se tiene que usar el prefix sum, y que es prefix sum? prefix es un array que guarda todas la suma de cada elemento del array, por ejemplo:
+[1,1,1] = [1,2,3]
+
+ahora, par aun ejemplo de como va a funcionar
+
