@@ -38,7 +38,7 @@ mkdir -p "$EXERCISE_DIR"
 awk -v number="$EXERCISE_NUMBER" -v title="$EXERCISE_TITLE" \
     'NR == 1 { $0 = "# " number ". " title } { print }' \
     "$TEMPLATE" > "$EXERCISE_DIR/notes.md"
-touch "$EXERCISE_DIR/solution.ts"
+printf "export {};\n" > "$EXERCISE_DIR/solution.ts"
 
 echo "Ejercicio creado:"
 echo "$EXERCISE_DIR"

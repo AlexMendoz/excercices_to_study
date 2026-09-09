@@ -78,9 +78,9 @@ Respuesta: el valor de i o de j se almacena en un nuevo array cumpliendo la regl
 
 ## Resultado del intento
 
-- Fecha: 04-08-2026
-- Tiempo efectivo: 40 minutos
-- Estado: Resuelto con ayuda
+- Fecha: 04-08-2026; 8-08-2026
+- Tiempo efectivo: 40 minutos; 20 minutos
+- Estado: Resuelto con ayuda: sin ayuda
 - Ayuda utilizada: Pista 
 - Tests completados:
 - Complejidad temporal: O(n)
@@ -89,6 +89,7 @@ Respuesta: el valor de i o de j se almacena en un nuevo array cumpliendo la regl
 ## Bloqueo principal
 
 Respuesta: por algun motivo (quiza no estaba concentrado del todo) en vez de poner nums[i] puse solo i y j
+Respuesta: no considerar cuando los indices eran el mismo y se comparaban el mismo numero
 
 ## Error encontrado
 

@@ -1,4 +1,4 @@
-# 560. subarray sum equals 
+# 560. subarray sum equals k
 
 Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
 
@@ -39,12 +39,20 @@ Respuesta:
 ## 2. Antes de programar
 
 ### Regla principal del algoritmo
-Respuesta:
+Respuesta: encontrar un ventana que cumpla con la condicion de la suma
 
 ### Variables / estructuras importantes
-- `variable`:
-  - Representa:
-  - Cambia cuando:
+- `variable`: i
+  - Representa: indice izquierdo
+  - Cambia cuando: no se cumple la suma igual a k
+
+- `variable`: j
+  - Representa:indice derecho
+  - Cambia cuando: siempre no se cunmpla la suma igual a k
+
+- `variable`: ans
+  - Representa: numero de subarray que cumplen con la condicion
+  - Cambia cuando: se encuentra un nuevo subarray
 
 ---
 
